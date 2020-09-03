@@ -1,11 +1,11 @@
 {
-  "name": "@totvs/po-theme",
-  "version": "3.4.0",
-  "author": "Totvs",
-  "description": "PO Theme - Totvs Default Theme",
+  "name": "@nicoleoliveira/voce-que-lute-po-theme",
+  "version": "3.5.0-NEXT",
+  "author": "",
+  "description": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/totvs/po-theme-totvs"
+    "url": ""
   },
   "license": "MIT",
   "scripts": {

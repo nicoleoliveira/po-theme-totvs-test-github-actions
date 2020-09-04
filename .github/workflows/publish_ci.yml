@@ -27,7 +27,7 @@ jobs:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
  
     - name: Add "latest" tag
-      if: (!endsWith(github.ref, '-next'))
-      run: npm dist-tags add @nicoleoliveira/voce-que-lute-po-theme@${{ steps.package-version.outputs.current-version}}
+      if: (!contains(github.ref, '-next') && !contains(github.ref, '-rc'))
+      run: npm dist-tags add @nicoleoliveira/voce-que-lute-po-theme@${{ steps.package-version.outputs.current-version }}
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
